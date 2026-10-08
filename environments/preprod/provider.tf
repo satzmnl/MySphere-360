@@ -6,6 +6,12 @@ terraform {
       version = "~> 5.8"
     }
   }
+  backend "azurerm" {
+    resource_group_name  = "SATTAR-RESOURCE-GROUP"
+    storage_account_name = "sattarstorage0"
+    container_name       = "sattarcontainer"
+    key                  = "preprod.tfstate"
+  }
 }
 
 provider "azurerm" {

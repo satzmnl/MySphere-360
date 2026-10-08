@@ -9,3 +9,4 @@ module "storage_account" {
   source           = "../../modules/azurerm_storage_account"
   storage_accounts = var.storage_accounts
 }
+
